@@ -1,0 +1,79 @@
+.mainContainer {
+    background: linear-gradient(rgb(122, 3, 27),rgb(173, 5, 39),crimson,rgb(247, 105, 129),white,rgb(245, 134, 91),rgb(180, 49, 16),rgb(95, 47, 2));
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.Container {
+    top:80px;
+    left:20%;
+    width: 65%;
+    height: 500px;
+    display:flex;
+    position: relative;
+    background-color: white;
+    border-radius: 3rem;
+}
+
+.leftSide {
+    float: left;
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 3rem 0 0 3rem;
+    background: linear-gradient(rgb(122, 3, 27),rgb(173, 5, 39),crimson,rgb(247, 105, 129),white,rgb(245, 134, 91),rgb(180, 49, 16),rgb(95, 47, 2));
+
+}
+
+.rightSide {
+    float: right;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 0 3rem 3rem 0;
+    
+}
+
+.content{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    display:flex;
+    flex-direction: column;
+    color: white;
+    font-weight: bold;
+    text-wrap: wrap;
+    font-style: italic;
+    font-size: 1rem;
+
+
+}
+
+.image {
+    width: 180%;
+    height: 70%;
+    left: 0;
+    top: 25%;
+    position: relative;
+
+
+}
+
+
+.details form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.register{
+    margin: 1rem 0 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

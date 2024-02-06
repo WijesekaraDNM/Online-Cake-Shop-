@@ -1,0 +1,1 @@
+export { StyleColor } from "./StyleColor";

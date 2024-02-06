@@ -1,0 +1,36 @@
+.container{
+    justify-content: center;
+    display: flex;
+    margin: 2rem;
+    padding: 0.5rem;
+}
+
+.container input {
+    border-radius: 10rem 0 0 10rem;
+    border: none;
+    height: 2rem;
+    width: 15rem;
+    background-color: wheat;
+    padding: 0.6rem; /* Specify a unit for padding */
+    font-size: 1rem;
+    font-weight: 500;
+    outline: none;
+}
+
+.container button {
+    color: wheat;
+    height: 2rem;
+    width: 5rem;
+    font-size: 1rem;
+    border-radius: 0 10rem 10rem 0; /* Remove spaces in border-radius */
+    border: none;
+    background-color: crimson;
+    opacity: 0.8;
+    outline: none;
+}
+
+.container button:hover {
+    opacity: 1;
+    color: white;
+    cursor: pointer;
+}

@@ -1,0 +1,23 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    height: 1rem;
+}
+
+.container a{
+    background-color: crimson;
+    color: azure;
+    padding: 0.3rem 1rem;
+    margin: 0.2rem 0.05rem ;
+    border-radius: 10rem;
+    font-weight: bold;
+    font-size: 0.8rem;
+    opacity: 0.7;
+    width: 10rem;
+    text-align: center;
+}
+
+.container a:hover{
+    opacity: 1;
+    cursor: pointer;
+}

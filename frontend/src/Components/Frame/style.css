@@ -1,0 +1,219 @@
+.frame {
+  background-color: #ffffff;
+  border-radius: 33.76px 0px 0px 33.76px;
+  height: 864px;
+  position: relative;
+  width: 747px;
+}
+
+.frame .frame-wrapper {
+  border: 0.84px solid;
+  border-color: #000000;
+  border-radius: 8.44px;
+  height: 54px;
+  left: 224px;
+  opacity: 0.8;
+  position: absolute;
+  top: 283px;
+  width: 219px;
+}
+
+.frame .div-wrapper {
+  align-items: flex-start;
+  background-color: #ffffff;
+  display: inline-flex;
+  gap: 8.44px;
+  left: 16px;
+  padding: 8.44px;
+  position: relative;
+  top: -16px;
+}
+
+.frame .text-wrapper {
+  color: #000000;
+  font-family: "Inter", Helvetica;
+  font-size: 13.5px;
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -0.84px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frame .div {
+  border: 0.84px solid;
+  border-color: #000000;
+  border-radius: 8.44px;
+  height: 54px;
+  left: 462px;
+  opacity: 0.8;
+  position: absolute;
+  top: 283px;
+  width: 219px;
+}
+
+.frame .frame-wrapper-2 {
+  border: 0.84px solid;
+  border-color: #000000;
+  border-radius: 8.44px;
+  height: 54px;
+  left: 224px;
+  opacity: 0.8;
+  position: absolute;
+  top: 432px;
+  width: 455px;
+}
+
+.frame .rectangle {
+  height: 40px;
+  left: -1062px;
+  position: absolute;
+  top: 874px;
+  width: 203px;
+}
+
+.frame .overlap-group {
+  background-color: #ffffff;
+  border: 0.84px solid;
+  border-color: #000000;
+  border-radius: 8.44px;
+  height: 52px;
+  left: 224px;
+  position: absolute;
+  top: 705px;
+  width: 217px;
+}
+
+.frame .text-wrapper-2 {
+  color: #000000;
+  font-family: "Inter", Helvetica;
+  font-size: 13.5px;
+  font-style: italic;
+  font-weight: 600;
+  left: 56px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 19px;
+  white-space: nowrap;
+}
+
+.frame .google {
+  height: 17px;
+  left: 24px;
+  position: absolute;
+  top: 17px;
+  width: 17px;
+}
+
+.frame .overlap {
+  /*background-image: url(../../../static/img/rectangle-16.svg);*/
+  background-size: 100% 100%;
+  height: 52px;
+  left: 470px;
+  position: absolute;
+  top: 705px;
+  width: 208px;
+}
+
+.frame .text-wrapper-3 {
+  color: #000000;
+  font-family: "Inter", Helvetica;
+  font-size: 13.5px;
+  font-style: italic;
+  font-weight: 600;
+  left: 51px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 19px;
+  white-space: nowrap;
+}
+
+.frame .facebook-instance {
+  height: 20px !important;
+  left: 21px !important;
+  position: absolute !important;
+  top: 16px !important;
+  width: 20px !important;
+}
+
+.frame .already-have-an {
+  color: transparent;
+  font-family: "Inter", Helvetica;
+  font-size: 13.5px;
+  font-weight: 600;
+  left: 230px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 570px;
+  white-space: nowrap;
+}
+
+.frame .span {
+  color: #000000;
+  font-style: italic;
+}
+
+.frame .text-wrapper-4 {
+  color: #50aaf7;
+  font-style: italic;
+}
+
+.frame .div-wrapper-2 {
+  background-color: #b80d2d;
+  border: 0.84px solid;
+  border-color: #000000;
+  border-radius: 8.44px;
+  height: 38px;
+  left: 224px;
+  opacity: 0.8;
+  position: absolute;
+  top: 506px;
+  width: 455px;
+}
+
+.frame .text-wrapper-5 {
+  color: #f4ccc7;
+  font-family: "Inter", Helvetica;
+  font-size: 20.3px;
+  font-style: italic;
+  font-weight: 600;
+  left: 151px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 6px;
+  width: 154px;
+}
+
+.frame .text-wrapper-6 {
+  color: #000000;
+  font-family: "Inter", Helvetica;
+  font-size: 13.5px;
+  font-style: italic;
+  font-weight: 600;
+  left: 441px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 624px;
+  white-space: nowrap;
+}
+
+.frame .text-wrapper-7 {
+  color: #c63d57;
+  font-family: "Inter", Helvetica;
+  font-size: 40.5px;
+  font-style: italic;
+  font-weight: 800;
+  left: 224px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 82px;
+}

@@ -1,0 +1,19 @@
+.create-account {
+  height: 46px;
+  position: relative;
+  width: 334px;
+}
+
+.create-account .have-an-amaizing {
+  color: #ffffff;
+  font-family: "Inter", Helvetica;
+  font-size: 30.4px;
+  font-style: italic;
+  font-weight: 700;
+  left: -31px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: -1px;
+  width: 334px;
+}

@@ -1,0 +1,23 @@
+.container{
+    position:relative;
+    margin-bottom: 0.5rem;
+    border-radius: 0.7rem;
+    padding-top: 0.3rem;
+    justify-content: center;
+}
+
+.label{
+    display: inline-block;
+    margin-left: 6rem;
+    margin-top: 1rem;
+    color: black;
+    font-size: 1rem;
+}
+
+.content{
+
+    padding: 0 0.5rem;
+    height: 2.7rem;
+    display: flex;
+    align-items: center;
+}

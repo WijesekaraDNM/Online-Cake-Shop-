@@ -1,0 +1,53 @@
+
+.container{
+    /*background-image: url("../../../public/foods/bg1.jpg");*/
+  
+    background-size: cover;
+    height: 50rem;
+}
+.content{
+    margin: 5rem 0 0 0;
+    font-size: 5rem;
+    text-align: center;
+    font-style: italic;
+    float: right;
+    color: white;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.search{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem 0 0 25rem;
+}
+.tag{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container1 {
+    height: 30rem;
+    display: flex;
+    background-color: crimson;
+    overflow: hidden;
+  
+}
+
+.picture{
+    background-image: url("../../../public/foods/designpage.jpg");
+    width: 80%;
+    justify-content: center;
+    height: 100%;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    float: left;
+    z-index: 10;
+    transform: skewY(10deg);
+    border-radius: 10rem;
+    transform: skewX(8deg );
+
+}

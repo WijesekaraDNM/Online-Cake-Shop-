@@ -1,0 +1,47 @@
+.input {
+    width: 75%;
+    height: 100%;
+    margin: 0 0 0 5rem;
+    padding: 0 0 0 1rem;
+    border: none;
+    border-bottom: 0.1rem solid rgb(134, 12, 3);
+    border-radius: 0.2rem;
+    font-size: 1.1rem;
+    outline:none;
+    color: rgb(58, 55, 55);
+    justify-content: center;
+}
+.input:hover{
+    border-bottom: 0.2rem solid rgb(233, 73, 105);
+    background-color: rgb(122, 121, 121);
+    cursor: pointer;
+    
+}
+.input::placeholder {
+    margin: 2rem;
+    padding: 2rem;
+    color: rgb(202, 199, 199);
+    font-weight: lighter;
+    font-size: 0.7rem;
+    justify-content: center;
+}
+
+
+.input:focus{
+    border-width: 5px;
+}
+
+.error {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    top: 0;
+    right: 3rem;
+    height: 100%;
+    width: 12rem;
+    color: red;
+    text-align: center;
+    font-size: 0.9rem;
+    margin: 1rem 0 0 0;
+}

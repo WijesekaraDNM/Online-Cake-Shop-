@@ -1,0 +1,62 @@
+.list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+}
+
+.list li a {
+    height: 20rem;
+    width: 16rem;
+    border: 1px solid whitesmoke;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color: #e72923;
+}
+
+
+.img a{
+    height: 10rem;
+    width: 10rem;
+    overflow: hidden;
+    border: 1px solid whitesmoke;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    display: flex;
+    border-color: crimson;
+
+}
+
+
+
+.content{
+    margin-top: 0.3rem;
+    padding: 0.5rem 1rem;
+    position: relative;
+    height: 7rem;
+    color: black;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.favorite{
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    font-size: 1.2rem;
+}
+
+.price{
+    position: absolute;
+    bottom: 0;
+    left: 0.9rem;
+    padding: 0.3rem 100% 0 0;
+    color: rgb(5, 160, 5);
+    margin-top: 0.7rem;
+    font-size: 1.1rem;
+}

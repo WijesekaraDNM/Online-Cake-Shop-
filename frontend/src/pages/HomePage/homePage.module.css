@@ -1,0 +1,221 @@
+.k {
+    display: flex;
+    flex-direction: column; /* Arra/* Divide into two rows with equal space in between */
+    height: 100vh;
+    
+}
+
+.bg {
+    color: wheat;
+    background-image: url('../../../public/foods/homeCake2.jpg');
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.about {
+    color: rgb(248, 247, 247);
+    display: flex;
+    font-size: 2rem;
+    margin: 0 25rem 1rem 0;
+    justify-content: center;
+    flex-wrap:wrap;
+    top: 1rem;
+    left: 1rem;
+    text-align:justify;
+    padding: 1rem;
+    font-style: italic;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+}
+.About{
+    color: rgb(250, 250, 243);
+    display: flex;
+    font-size: 1.5rem;
+    margin: 1rem 10rem 0 20rem;
+    justify-content: center;
+}
+
+.p {
+    color: rgb(245, 250, 202);
+    font-size: 1.2rem;
+    font-weight: lighter;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem 0rem 1rem 0;
+    text-align: center;
+}
+
+.include{
+    color: rgb(248, 255, 182);
+    font-size: 1rem;
+    font-weight: lighter;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem 0rem 0 4rem;
+    text-align: justify;
+    width: 40rem;
+    justify-content: center;
+}
+
+.button{
+    position: relative;
+    width: 6rem;
+    height: 2rem;
+    border-radius: 3rem;
+    color: aliceblue;
+    margin: 0 0rem 1rem 30rem;
+    border-width: 0.2rem;
+    border-color: brown;
+    background-color: rgb(204, 140, 22);
+    text-align: center;
+}
+button:hover{
+    background-color: crimson;
+    cursor: pointer;
+}
+
+.circle{
+    /*height: 100vh;
+    width: 700px;
+    background-color: #555;
+    border-radius: 300px;  
+    display: inline-block;
+    overflow: hidden;
+    flex-wrap: wrap;
+    left: 1000px;
+    position: fixed;*/
+    position: absolute;
+    right: 0;
+    top:0;
+    width: 30%; /* Adjust the width as needed */
+    height: 100%;
+    background:radial-gradient(orange 0, rgb(243, 89, 115) 10%,crimson 30%,rgb(88, 12, 12) 70%); /* Background color of the half circle */
+    border-top-left-radius: 50vw; /* This creates the left half of the circle */
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 50vw; /* This ensures the right side is straight */
+    border-bottom-right-radius:0; 
+    overflow: hidden;
+    float: right;
+    
+
+
+}
+.image2{
+    margin: 9rem 1rem 0 1rem;
+}
+
+.info{
+    height: 300px;
+    color: black;
+    width: 100%;
+}
+
+.cont1{
+    float: left;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 100%;
+}
+
+.cont11{
+    height: 50%;
+    font-size: 2rem;
+}
+.cont12{
+    height: 50%;
+    font-size: 1rem;
+}
+.cont2{
+    float: right;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 80%;
+}
+
+.cont21{
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    width: 100%;
+}
+.cont22{
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    width: 100%;
+}
+
+.cont221{
+    float: left;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    margin: 1rem;
+}
+
+.cont211{
+    float: left;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    margin: 1rem;
+}
+.cont212{
+    float: right;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    margin: 1rem;
+}
+
+
+
+
+
+
+.A{
+    height: 50%;
+}
+.B{
+    height: 50%;
+    font-size: 0.5rem;
+    
+}
+
+
+
+.title{
+    float:inline-end;
+    align-content: center;
+    padding: 1rem 1rem 1rem 0;
+    margin: 0 2.5rem 6rem 0;
+    font-size: 1rem;
+    color: black;
+}
+
+
+.title::before{
+    content: "MD";
+    background-color: rgb(248, 26, 26);
+    color: white;
+    font-size: 1rem;
+}
+
+.image{
+    width: 30%;
+    height: 70%;
+    margin:0.5rem 0 2rem 2.5rem;
+    float:inline-start;
+}
