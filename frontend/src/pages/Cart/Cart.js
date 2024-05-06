@@ -10,7 +10,7 @@ export default function Cart() {
   return(
    <>
    <Title title="Cart Page" margin="1.5rem 0 0 2.5rem" fontSize="3rem" color="crimson"/>
-    {cart.items.length===0? (<NotFound message="Cart Page Is Empty!"/>) : (
+    {cart && cart.items.length===0? (<NotFound message="Cart Page Is Empty!"/>) : (
         <div className={classes.container}>
             <ul className={classes.list}>
                 {cart.items.map(item =>(

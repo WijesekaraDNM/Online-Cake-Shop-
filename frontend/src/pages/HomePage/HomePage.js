@@ -13,11 +13,10 @@ const ReadMoreReadLess = () =>{
     
   return (
         <div className={classes.k}>
-            <div className={classes.bg}>
-        
+            <div className={classes.bg}>     
                 <div className={classes.about}>
-                    <div>
-                        Marvelous & Delicious Cakes for Everyone
+                    <div className={classes.topic}>
+                        Marvelous & Delicious Cakes<br></br> for Everyone
                     </div>
                      <div >
                         <div className={classes.p}> 
@@ -48,24 +47,18 @@ const ReadMoreReadLess = () =>{
                                 
                                 </>
                             )}
-                            <button className={classes.button} onClick={toggleShowMore}>
+                              <button className={classes.button} onClick={toggleShowMore}>
                                 {showMore ? 'Read less' : 'Read more...'}
-                            </button>
-                            
+                             </button>
                         </div>
-                      
                     </div>
-           
                 </div>
-                 <div className={classes.circle}>   
+            
+                <div className={classes.circle}>   
                     <img className={classes.image2} src={"/foods/Piece.png"} alt=""/>
                 </div>
             </div>
-
-        </div>
-        
-       
-
+         </div>
 
   );
 

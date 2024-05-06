@@ -1,0 +1,235 @@
+
+.title{
+    position: relative;
+    display: flex;
+    align-content: center;
+    padding-bottom: 0%;
+    padding-top: 5%;
+    margin-top: 0%;
+    font-size: 1.5rem;
+    color: black;
+    font-weight: bold;
+    height: 100%;
+}
+
+
+.title::before{
+    content: "MD";
+    background-color: crimson;
+    color: white;
+    margin: 1% 0 0% 0;
+    font-size: 1.7rem;
+}
+
+.image{
+    width: 40%;
+    height: 90%;
+    margin: 5% 0 0 15%;
+    align-items: center;
+}
+
+.footer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 55vh;
+    width: 100%;
+    align-items: center;
+}
+.detail{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 90%;
+    width: 100%;
+    background-color: transparent;
+    align-items: center;
+}
+.socialMedia{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 10%;
+    width: 100%;
+    background-color: rgb(168, 108, 108);
+}
+.col1{
+    position: relative;
+    display: flex;
+    flex-direction:column;
+    height: 100%;
+    width: 30%;
+    background-color: blue;
+}
+
+.logo{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(248, 248, 248);
+    height: 30%;
+    width: 100%;
+    align-content: center;
+}
+.log{
+    height: 50%;
+    position: relative;
+    flex-direction: row;
+    display: flex;
+    width: 70%;
+}
+
+.contact{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(244, 245, 226);
+    height: 70%;
+    width: 100%;
+    align-items: center;
+}
+.col2{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(14, 100, 57);
+    height: 100%;
+    width: 70%;
+}
+.row1{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    background-color:rgb(243, 240, 242);
+    height: 50%;
+    width: 100%;
+}
+.col11{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(242, 247, 247);
+    width: 50%;
+    height: 100%;
+}
+.col22{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    width: 50%;
+    height: 100%;
+}
+.row2{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    background-color:rgb(237, 241, 214);
+    height: 50%;
+    width: 100%;
+}
+
+.icon1{
+    display: block;
+    width: 20%;
+    height: 50%;
+    padding: 0.5%;
+    margin: 10% 0 0 5%;
+}
+.icons{
+    display: block;
+    width: 60%;
+    height: 50%;
+    padding: 0.5%;
+    margin: 1%;
+}
+.description{
+    color: rgb(240, 33, 78);
+    height: 50%;
+    font-size: 0.7rem;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+    font-style: italic;
+    padding: 1%;
+
+}
+.description1{
+    color: rgb(240, 33, 78);
+    height: 50%;
+    font-size: 0.7rem;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+    font-style: italic;
+    padding: 1%;
+    margin-top: 10%;
+
+}
+.description1 p{
+    color: black;
+}
+
+.table{
+    margin-left: 10%;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.data {
+    text-align: left;
+    width: 10%;
+    align-items: center;
+    margin-left: 40%;
+}
+
+.Links{
+    background-color: crimson;
+    color: white;
+    text-align: center;
+    width: 58%;
+    height: 90%;
+    margin: 1% 1% 1% 1%;
+    font-size: 0.8rem;
+    align-content: center;
+}
+.Account{
+    background-color: rgb(219, 125, 2);
+    color: white;
+    text-align: center;
+    width: 58%;
+    height: 90%;
+    margin: 1% 1% 1% 1%;
+    font-size: 0.8rem;
+    text-wrap:wrap;
+}
+li{
+    list-style-type: none;
+    margin: 0.5%;
+}
+.socialCol1{
+    width: 50%;
+    height: 100%;
+    margin-left: 5%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+.icon{
+    display: block;
+    width: 7%;
+    height: 80%;
+    padding: 0.5%;
+    margin: 1%;
+}
+.socialCol2{
+    width: 50%;
+    height: 100%;
+    margin-left: 5%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-right: 5%;
+}
+

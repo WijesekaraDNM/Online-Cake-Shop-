@@ -41,7 +41,6 @@ export default function DesignsPage() {
 
 
   return(
-    <>
       <div className={classes.container}>
         <div className={classes.container1}>
           <div className={classes.picture}>
@@ -52,9 +51,12 @@ export default function DesignsPage() {
           </div>
 
         </div>
-        
-        <Search />
+
         <div className={classes.container2}>
+         <Search />
+        </div>
+      
+        <div className={classes.container3}>
           <Tags tags={tags}/>
           {foods.length === 0 && <NotFound linkText="Reset Search"/>}
           <Thumbnails foods={foods}/>
@@ -64,6 +66,5 @@ export default function DesignsPage() {
       </div>
 
     
-    </>
   );
-}
+};

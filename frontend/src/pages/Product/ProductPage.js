@@ -31,6 +31,10 @@ export default function ProductPage() {
             <div className={classes.details}>
                 <div className={classes.header}>
                     <span className={classes.name}>{food.name}</span>
+                    <span  className={`${classes.favorite} ${
+                        food.favorite? ' ': classes.not
+                    }`}/>
+                    <img className={classes.heartIcon} src={"/foods/heart(1).png"} alt=""/>
                 </div>
                 <div>
                     <span className={classes.price}>
