@@ -3,7 +3,7 @@ version: '1'
 services:
   mongo:
     image: mongo:latest
-    container_name: mongo
+    container_name: mongocont
 
   backend:
     build: ./backend
