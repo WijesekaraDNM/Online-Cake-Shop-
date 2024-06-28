@@ -38,7 +38,7 @@ export const Cakes=[
         id:'6',
         name:'Wedding Cakes',
         price:25000,
-        imageUrl:'cake-3.png',
+        imageUrl:'cake-6.png',
         tags:['Wedding Cakes'],
     },
     {
