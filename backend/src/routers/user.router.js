@@ -9,9 +9,7 @@ const PASSWORD_HASH_SALT_ROUNDS = 10;
 
 const router = Router();
 
-router.post(
-    '/login',
-    handler(async(req, res) => {
+router.post('/login',handler(async(req, res) => {
         const { email, password } = req.body;
         const user = await UserModel.findOne({email}); 
     
@@ -25,9 +23,7 @@ router.post(
     })
 );
 
-router.post(
-    '/register',
-    handler(async (req, res) => {
+router.post('/register',handler(async (req, res) => {
         const { name,email, password, address } = req.body;
 
         const user = await UserModel.findOne({email});

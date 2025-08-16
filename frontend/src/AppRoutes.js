@@ -7,6 +7,8 @@ import LoginPage from './pages/LoginPage/LoginPage';
 import HomePage from './pages/HomePage/HomePage';
 import RegisterPage from './pages/RegisterPage/RegisterPage';
 import { TestPage } from './pages/test/TestPage';
+import ContactPage from './pages/Contacts/ContactsPage';
+import CustomDesignPage from './pages/CustomPage/CustomPage';
 
 export default function AppRoutes() {
   return (
@@ -19,7 +21,9 @@ export default function AppRoutes() {
         <Route path="/cart" element={<Cart/>}/>
         <Route path="/login" element={<LoginPage/>}/>
         <Route path="/Register" element={<RegisterPage/>}/>
-        <Route path="HomePage" element={<HomePage/>}/>
+        <Route path="/HomePage" element={<HomePage/>}/>
+        <Route path="/ContactsPage" element={<ContactPage/>}/>
+        <Route path="/CustomPage" element={<CustomDesignPage/>}/>
         <Route path="/TestPage" element = {<TestPage/>}/>
     </Routes>
   );

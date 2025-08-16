@@ -90,7 +90,7 @@ export default function RegisterPage() {
                 })}
                 error = {errors.address}
               />
-              <Button type="submit" text = "Register" color={"white"} backgroundColor={"crimson"} height={"1.5rem"} width={"18rem"} fontSize={"1rem"} margin={"2rem 0 1rem 2rem"} />
+              <Button type="submit" text = "Register" color={"white"} backgroundColor={"crimson"} height={"1.8rem"} width={"18rem"} fontSize={"1rem"} margin={"2rem 0 1rem 2rem"} />
             <div className={classes.login}>
               Already a user? &nbsp;
               <Link to={`/login?${returnUrl ? 'returnUrl='+ returnUrl : ''}`}>

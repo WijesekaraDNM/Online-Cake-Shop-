@@ -4,16 +4,12 @@ import handler from 'express-async-handler';
 
 const router = Router();
 
-router.get(
-    '/',
-    handler(async(req,res) => {
+router.get('/',handler(async(req,res) => {
         const foods = await FoodModel.find({});
         res.send(foods);
 }));
 
-router.get(
-    '/tags',
-    handler(async(req,res) => {
+router.get('/tags',handler(async(req,res) => {
         const tags = await FoodModel.aggregate([
             {
                 $unwind: '$tags',
@@ -44,26 +40,20 @@ router.get(
     })
 );
 
-router.get(
-    '/search/:searchTerm',
-    handler(async(req,res) => {
+router.get('/search/:searchTerm',handler(async(req,res) => {
     const {searchTerm } =req.params;
     const searchRegex = new RegExp(searchTerm, 'i');
     const cakes = await FoodModel.find({ name: { $regex: searchRegex } });
     res.send(cakes);
 }));
 
-router.get(
-    '/tag/:tag',
-    handler(async(req, res) => {
+router.get( '/tag/:tag',handler(async(req, res) => {
     const { tag } = req.params;
     const cakes = await FoodModel.find({ tags: tag });
     res.send(cakes);
 }));
 
-router.get(
-    '/:foodId',
-    handler(async(req, res) => {
+router.get('/:foodId',handler(async(req, res) => {
     const { foodId } = req.params;
     const food = await FoodModel.findOne({ id:foodId });
     res.send(food);

@@ -1,284 +1,273 @@
-.header{
-    background:linear-gradient(rgb(248, 204, 183) , rgb(250, 168, 147)65%,rgb(143, 6, 33)100%);
-    padding:0;
+/* header.module.css */
+
+.header {
+    background: linear-gradient(rgb(248, 204, 183), rgb(250, 168, 147) 65%, rgb(143, 6, 33) 100%);
+    padding: 0;
     border-bottom: 1px solid brown;
-    grid-row: 3 1;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .headerContainer {
     display: flex;
     flex-wrap: wrap;
-    justify-items: center;
-    align-items: center;
-    
-
-}
-.header a:hover{
-    background: rgb(231, 28, 89);
-    color: white;
-    cursor: pointer;
-    height: 100%;
-    font-weight: bold;
-    text-align: center;
-    vertical-align: middle;
-}
-/* .container{
-    display:flex;
-    flex-direction: row;
-    width: 100%;
-    height: auto;
     justify-content: space-between;
-}
-.container li a{
-    display: inline;
-    flex-direction: row;
-    color: beige;
-    margin-right:3%;
-    max-width: 100%;
-}
-.container li{
-    display: inline-block;
-    flex-direction:column;
-    background-color: green;
-    text-align: center;
-    justify-content: center;
-    width: auto;
-
-}
-.container ul{
-    display: flex;
-    flex-direction: row;
-    background-color: transparent;
-} */
-
-.logo1{
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+  }
+  
+  .logo1 {
     font-weight: bold;
     color: brown;
     display: flex;
     height: 4.3rem;
     align-items: center;
-    justify-items: center;
-}
-
-.title{
+    gap: 10px;
+  }
+  
+  .title {
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: black;
-}
-
-.title::before{
+    font-family: 'Dancing Script', cursive, sans-serif;
+    font-weight: 700;
+  }
+  
+  .title::before {
     content: "MD";
     background-color: rgb(248, 26, 26);
     color: white;
-    font-size: 2rem;
-}
-
-.image{
-    width: 4.3rem;
-    margin:0.2rem;
-    height: 3.3rem;
-}
-
-.header ul{
+    font-size: 1.5rem;
+    padding: 0 5px;
+    border-radius: 5px;
+    margin-right: 5px;
+  }
+  
+  .image {
+    width: auto;
+    height: 100%;
+    max-height: 60px;
+    object-fit: contain;
+  }
+  
+  /* Main Menu Styles */
+  .mainMenu {
     display: flex;
-    flex-wrap:wrap;
-    flex: 1;
-    list-style-type: none;
-    margin: 0;   
-    height: 4.3rem;
-    justify-content: center;
-} 
-
-.mainMenu ul a{
+    transition: all 0.3s ease;
+    align-items: center;
+    vertical-align: middle;
+  }
+  
+  .mainMenu ul {
     display: flex;
-    height: 4rem;
-    width: 28%;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    align-items: center;
+  }
+  
+  .mainMenu li {
+    position: relative;
+  }
+  
+  .mainMenu a {
     color: rgb(128, 73, 6);
-    justify-content: center;
-    align-items: center;
     font-weight: bold;
-}
-.header li{
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+  }
+  
+  .mainMenu a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #000;
+    transform: translateY(-2px);
+  }
+  
+  /* Profile Menu Styles */
+  .semiMenu {
     display: flex;
-    flex-direction: row;
-    flex: 6 2;
+  }
+  
+  .profile {
+    display: flex;
     align-items: center;
-    background-color: transparent;
-    height: 4.3rem;
-}
-/* .header nav a{
-    text-align: center;
-    align-content: center;
-}
-.header nav ul{
-    display: flex;
-    background-color: rgb(185, 129, 129);
-    width: 100%;
-} */
-/* .mainMenu{
-    display: flex;
-    background-color: transparent;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .userName {
+    color: rgb(69, 4, 4);
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .userName:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .menu_container {
+    position: relative;
+  }
+  
+  .menu {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background: white;
     align-items: center;
-    justify-content: center;
-} */
-/* .mainMenu li{
-    width: 100%;
-    background-color: rgb(55, 196, 20);
-}*/
-/* .mainMenu li.a:hover{
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    min-width: 150px;
+    overflow: hidden;
+    z-index: 100;
+  }
+  
+  .menu a {
+    display: block;
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin: 2px;
+    padding: a;
+  }
+  
+  .menu a:hover {
     background: rgb(231, 28, 89);
     color: white;
-    cursor: pointer;
-    height: 4rem;
-} */
-/*.mainMenu a{
-    color: rgb(59, 2, 2);
-    font-size: 1rem;
-    font-weight: bold;
-} */
-
-.menu_container{
-    position:relative;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
-
-.menu{
-    position: absolute;
-    left:0;
-    z-index:1;
-    background-color: white;
-    display:none;
-   
-}
-
-.menu_container:hover .menu{
-    display:block;
-}
-
-
-.cart_count{
-    background-color: purple;
-    color: white;
-    border-radius: 100%;
-    font-size: 0.8rem;
-    font-weight: bold;
-    padding: 0.1rem 0.4rem;
-    min-width: 1rem;
-}
-.semiMenu li{
-    vertical-align: middle;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    
-}
-
-.semiMenu ul a {
-    display: flex;
-    text-decoration: none;
+  }
+  
+  .cartLink {
+    position: relative;
+    padding: 0px 15px;
     color: rgb(82, 79, 79);
     font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
     align-items: center;
-    font-size: small;
-    justify-content: center;
-}
-.semiMenu ul a:hover{
-    background: rgb(231, 28, 89);
-    color: white;
-    cursor: pointer;
-    width: 100%;
-    height: 100%;
-    font-weight: bold;
-    text-align: center;
     vertical-align: middle;
-}
-@media only screen and (min-width: 992px) {
-    /* Laptop (lg) */
-    .logo {
-        width: 20%;
+    align-content: center;
+    transition: all 0.3s ease;
+  }
+  
+  .cartLink:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .cart_count {
+    position: relative;
+    top: -5px;
+    right: -2px;
+    background-color: purple;
+    color: white;
+    border-radius: 50%;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 2px 8px;
+    min-width: 6rem;
+    text-align: center;
+  }
+  
+  /* Mobile Menu Button */
+  .mobileMenuButton {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: rgb(128, 73, 6);
+    padding: 10px;
+  }
+  
+  /* Responsive Styles */
+  @media only screen and (max-width: 991px) {
+    .headerContainer {
+      padding: 10px;
     }
-    .header ul {
-        flex: 3;
+    
+    .mainMenu {
+      width: 100%;
+      max-height: 0;
+      overflow: hidden;
+      flex-direction: column;
     }
-    .mainMenu{
-        width: 60%;
+    
+    .mainMenu.show {
+      max-height: 500px;
+      padding: 10px 0;
     }
+    
+    .mainMenu ul {
+      flex-direction: column;
+      gap: 5px;
+    }
+    
+    .mainMenu a {
+      width: 100%;
+      text-align: center;
+    }
+    
+    .mobileMenuButton {
+      display: block;
+    }
+    
     .semiMenu {
-        width: 20%;
+      width: auto;
+      margin-left: auto;
     }
-}
-
-@media only screen and (max-width: 991px) {
-    /* Tablet (md) */
-    .logo1{
-        width: 30%;
-    }
-    .mainMenu{
-        width: 70%;
-    }
-    .header ul {
-        flex-direction: column;
-    }
-    .header ul a {
-        width: 100%;
-        padding: 0.5rem;
-    }
-    .menu_container {
-        display: inline-block;
-        width: 100%;
-    }
-    .menu {
-        position: relative;
-        top: 0;
-        left: 0;
-        display: flex;
-        flex-direction: row;
-    }
-    .menu_container:hover .menu {
-        display: block;
-    }
-    .semiMenu {
-        width: 100%;
-    }
-}
-
-
-@media only screen and (max-width: 767px) {
+  }
+  
+  @media only screen and (max-width: 767px) {
     .logo1 {
-        width: 100%;
-        flex: 1;
-
+      height: 3.5rem;
     }
-    .header{
-        align-items: center;
-        justify-content: center;
+    
+    .title {
+      font-size: 1.5rem;
     }
-    .header ul {
-        flex-direction: column;
+    
+    .title::before {
+      font-size: 1.2rem;
     }
-    .header ul a {
-        width: 100%;
-        padding: 0.5rem;
-        font-size: 1rem;
+    
+    .profile {
+      gap: 10px;
     }
-    .menu_container {
-        display: inline-block;
-        width: 100%;
-    }
+    
     .menu {
-        display: flex;
-        flex-direction:row;
-        top: 0;
-        left: 0;
-        display: none;
+      min-width: 120px;
     }
-    .menu_container:hover .menu {
-        display: block;
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .logo1 {
+      flex: 1;
     }
-    .semiMenu{
-        width: 100%;
+    
+    .headerContainer {
+      gap: 10px;
     }
-
-}
-
-
-
+    
+    .profile {
+      gap: 5px;
+    }
+    
+    .mainMenu a, .userName, .cartLink {
+      padding: 8px 10px;
+      font-size: 0.9rem;
+    }
+  }

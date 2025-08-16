@@ -1,235 +1,433 @@
+/* footer.module.css */
 
-.title{
-    position: relative;
-    display: flex;
-    align-content: center;
-    padding-bottom: 0%;
-    padding-top: 5%;
-    margin-top: 0%;
-    font-size: 1.5rem;
-    color: black;
-    font-weight: bold;
-    height: 100%;
+/* Base Styles */
+.footer {
+  background: linear-gradient(135deg, #f8ccc9 0%, #f6b3ae 100%);
+  color: #333;
+  padding: 3rem 0 0;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  overflow: hidden;
 }
 
-
-.title::before{
-    content: "MD";
-    background-color: crimson;
-    color: white;
-    margin: 1% 0 0% 0;
-    font-size: 1.7rem;
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #c7215d 0%, #f8a88b 100%);
 }
 
-.image{
-    width: 40%;
-    height: 90%;
-    margin: 5% 0 0 15%;
-    align-items: center;
+.footerContainer {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-.footer{
-    position: relative;
-    display: flex;
+/* Main Footer Content */
+.footerMain {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Brand Column */
+.brandColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.brandLogo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.logoImage {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-right: 15px;
+  transition: transform 0.3s ease;
+}
+
+.brandLogo:hover .logoImage {
+  transform: rotate(-10deg) scale(1.1);
+}
+
+.brandName {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.brandPrefix {
+  background: #c7215d;
+  color: white;
+  padding: 0 8px;
+  border-radius: 5px;
+  margin-right: 5px;
+  font-size: 1.5rem;
+}
+
+.brandDescription {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 15px;
+}
+
+.socialIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease;
+}
+
+.socialIcon:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.iconImage {
+  width: 60%;
+  height: 60%;
+  transition: all 0.3s ease;
+}
+
+.socialIcon:hover .iconImage {
+  transform: scale(1.2);
+}
+
+/* Contact Column */
+.contactColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.columnTitle {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 10px;
+  color: #c7215d;
+}
+
+.columnTitle::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background: #c7215d;
+}
+
+.contactList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.contactItem:hover {
+  background: rgba(255, 255, 255, 0.5);
+  transform: translateX(5px);
+}
+
+.contactIconWrapper {
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  flex-shrink: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contactIcon {
+  width: 60%;
+  height: 60%;
+  transition: all 0.3s ease;
+}
+
+.contactItem:hover .contactIcon {
+  transform: scale(1.2);
+}
+
+.contactText {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* Features Column */
+.featuresColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.featureCard {
+  display: flex;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  padding: 15px;
+  transition: all 0.3s ease;
+}
+
+.featureCard:hover {
+  background: white;
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.featureIconWrapper {
+  width: 40px;
+  height: 40px;
+  background: #c7215d;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.featureIcon {
+  width: 60%;
+  height: 60%;
+  filter: brightness(0) invert(1);
+  transition: all 0.3s ease;
+}
+
+.featureCard:hover .featureIcon {
+  transform: rotate(15deg);
+}
+
+.featureContent {
+  flex: 1;
+}
+
+.featureTitle {
+  font-size: 0.9rem;
+  margin: 0 0 5px;
+  color: #c7215d;
+}
+
+.featureDescription {
+  font-size: 0.8rem;
+  margin: 0;
+  color: #666;
+}
+
+/* Links Column */
+.linksColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.linksGroup {
+  margin-bottom: 1.5rem;
+}
+
+.linksList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.linksList li {
+  margin-bottom: 10px;
+}
+
+.footerLink {
+  color: #555;
+  text-decoration: none;
+  font-size: 0.9rem;
+  position: relative;
+  padding-bottom: 3px;
+  transition: all 0.3s ease;
+}
+
+.footerLink::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #c7215d;
+  transition: width 0.3s ease;
+}
+
+.footerLink:hover {
+  color: #c7215d;
+}
+
+.footerLink:hover::after {
+  width: 100%;
+}
+
+.footerLink.active {
+  color: #c7215d;
+}
+
+/* Footer Bottom */
+.footerBottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  margin-top: 2rem;
+}
+
+.paymentMethods {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.paymentIcon {
+  height: 30px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.paymentIcon:hover {
+  filter: grayscale(0);
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.copyright {
+  font-size: 0.8rem;
+  color: #666;
+  text-align: center;
+}
+
+/* Active State for Interactive Elements */
+.active {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .footerMain {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .featuresGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .footerMain {
+    grid-template-columns: 1fr;
+  }
+  
+  .brandLogo {
+    justify-content: center;
+    text-align: center;
     flex-direction: column;
-    height: 55vh;
-    width: 100%;
+  }
+  
+  .logoImage {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  
+  .brandName {
+    justify-content: center;
+  }
+  
+  .brandDescription {
+    text-align: center;
+  }
+  
+  .socialIcons {
+    justify-content: center;
+  }
+  
+  .columnTitle {
+    text-align: center;
+  }
+  
+  .columnTitle::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .contactItem {
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  
+  .contactIconWrapper {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  
+  .featureCard {
+    flex-direction: column;
     align-items: center;
-}
-.detail{
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    height: 90%;
-    width: 100%;
-    background-color: transparent;
-    align-items: center;
-}
-.socialMedia{
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    height: 10%;
-    width: 100%;
-    background-color: rgb(168, 108, 108);
-}
-.col1{
-    position: relative;
-    display: flex;
-    flex-direction:column;
-    height: 100%;
-    width: 30%;
-    background-color: blue;
+    text-align: center;
+  }
+  
+  .featureIconWrapper {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
 }
 
-.logo{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(248, 248, 248);
-    height: 30%;
-    width: 100%;
-    align-content: center;
-}
-.log{
-    height: 50%;
-    position: relative;
-    flex-direction: row;
-    display: flex;
-    width: 70%;
-}
-
-.contact{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    background-color:rgb(244, 245, 226);
-    height: 70%;
-    width: 100%;
-    align-items: center;
-}
-.col2{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    background-color:rgb(14, 100, 57);
-    height: 100%;
-    width: 70%;
-}
-.row1{
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    background-color:rgb(243, 240, 242);
-    height: 50%;
-    width: 100%;
-}
-.col11{
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    background-color: rgb(242, 247, 247);
-    width: 50%;
-    height: 100%;
-}
-.col22{
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    background-color: transparent;
-    width: 50%;
-    height: 100%;
-}
-.row2{
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    background-color:rgb(237, 241, 214);
-    height: 50%;
-    width: 100%;
-}
-
-.icon1{
-    display: block;
-    width: 20%;
-    height: 50%;
-    padding: 0.5%;
-    margin: 10% 0 0 5%;
-}
-.icons{
-    display: block;
-    width: 60%;
-    height: 50%;
-    padding: 0.5%;
-    margin: 1%;
-}
-.description{
-    color: rgb(240, 33, 78);
-    height: 50%;
+@media (max-width: 480px) {
+  .paymentMethods {
+    gap: 10px;
+  }
+  
+  .paymentIcon {
+    height: 25px;
+  }
+  
+  .copyright {
     font-size: 0.7rem;
-    font-weight: bold;
-    align-items: center;
-    text-align: center;
-    font-style: italic;
-    padding: 1%;
-
+  }
 }
-.description1{
-    color: rgb(240, 33, 78);
-    height: 50%;
-    font-size: 0.7rem;
-    font-weight: bold;
-    align-items: center;
-    text-align: center;
-    font-style: italic;
-    padding: 1%;
-    margin-top: 10%;
-
-}
-.description1 p{
-    color: black;
-}
-
-.table{
-    margin-left: 10%;
-    align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.data {
-    text-align: left;
-    width: 10%;
-    align-items: center;
-    margin-left: 40%;
-}
-
-.Links{
-    background-color: crimson;
-    color: white;
-    text-align: center;
-    width: 58%;
-    height: 90%;
-    margin: 1% 1% 1% 1%;
-    font-size: 0.8rem;
-    align-content: center;
-}
-.Account{
-    background-color: rgb(219, 125, 2);
-    color: white;
-    text-align: center;
-    width: 58%;
-    height: 90%;
-    margin: 1% 1% 1% 1%;
-    font-size: 0.8rem;
-    text-wrap:wrap;
-}
-li{
-    list-style-type: none;
-    margin: 0.5%;
-}
-.socialCol1{
-    width: 50%;
-    height: 100%;
-    margin-left: 5%;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-}
-.icon{
-    display: block;
-    width: 7%;
-    height: 80%;
-    padding: 0.5%;
-    margin: 1%;
-}
-.socialCol2{
-    width: 50%;
-    height: 100%;
-    margin-left: 5%;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    margin-right: 5%;
-}
-

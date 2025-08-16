@@ -78,3 +78,86 @@ export default function CartProvider({children}) {
 }
 
 export const useCart =() => useContext(CartContext);
+
+
+
+
+// import { useState, useEffect, useContext, createContext } from 'react';
+// import axios from 'axios';
+
+// const CartContext = createContext();
+
+// export const CartProvider = ({ children }) => {
+//   const cart = useProvideCart();
+//   return <CartContext.Provider value={cart}>{children}</CartContext.Provider>;
+// };
+
+// export const useCart = () => {
+//   return useContext(CartContext);
+// };
+
+// function useProvideCart() {
+//   const [cart, setCart] = useState({ items: [], totalCount: 0, totalPrice: 0 });
+//   const [loading, setLoading] = useState(true);
+
+//   // Load cart on mount
+//   useEffect(() => {
+//     fetchCart();
+//   }, []);
+
+//   const fetchCart = async () => {
+//     setLoading(true);
+//     try {
+//       const { data } = await axios.get('/api/cart', {
+//         headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
+//       });
+//       setCart(data);
+//     } catch (error) {
+//       console.error('Failed to fetch cart:', error);
+//     }
+//     setLoading(false);
+//   };
+
+//   const addToCart = async (item) => {
+//     try {
+//       await axios.post('/api/cart', item, {
+//         headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
+//       });
+//       await fetchCart();
+//     } catch (error) {
+//       console.error('Failed to add to cart:', error);
+//     }
+//   };
+
+//   const removeFromCart = async (cartItemId) => {
+//     try {
+//       await axios.delete(`/api/cart/${cartItemId}`, {
+//         headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
+//       });
+//       await fetchCart();
+//     } catch (error) {
+//       console.error('Failed to remove from cart:', error);
+//     }
+//   };
+
+//   const changeQuantity = async (cartItem, newQuantity) => {
+//     try {
+//       await axios.put(
+//         `/api/cart/${cartItem._id}`,
+//         { quantity: newQuantity },
+//         { headers: { Authorization: `Bearer ${localStorage.getItem('token')}` } }
+//       );
+//       await fetchCart();
+//     } catch (error) {
+//       console.error('Failed to update cart item:', error);
+//     }
+//   };
+
+//   return {
+//     cart,
+//     loading,
+//     addToCart,
+//     removeFromCart,
+//     changeQuantity,
+//   };
+// }

@@ -1,61 +1,137 @@
-.list{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    list-style-type: none;
-    padding: 0;
-}
+/* thumbnails.module.css */
 
-.list li a {
-    height: 20rem;
-    width: 16rem;
-    border: 1px solid whitesmoke;
-    border-radius: 1rem;
-    margin: 0.5rem;
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 0 1rem;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  .card {
+    position: relative;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cardLink {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .imageContainer {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+  }
+  
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .card:hover .image {
+    transform: scale(1.05);
+  }
+  
+  .quickView {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(92, 42, 42, 0.7);
     display: flex;
     flex-direction: column;
-    overflow: hidden;
-    color: #e72923;
-}
-
-
-.img a{
-    height: 10rem;
-    width: 10rem;
-    overflow: hidden;
-    border: 1px solid whitesmoke;
-    border-radius: 1rem;
-    margin: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .card:hover .quickView {
+    opacity: 1;
+  }
+  
+  .searchIcon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .cardContent {
+    padding: 1.5rem;
+  }
+  
+  .name {
+    margin: 0 0 0.5rem;
+    font-size: 1.2rem;
+    color: #5c2a2a;
+    font-weight: 600;
+  }
+  
+  .price {
+    color: #c7215d;
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+  
+  .favoriteButton {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
     display: flex;
-    border-color: crimson;
-
-}
-
-
-.content{
-    margin-top: 0.3rem;
-    padding: 0.5rem 1rem;
-    position: relative;
-    height: 7rem;
-    color: black;
-    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    z-index: 2;
+  }
+  
+  .favoriteButton:hover {
+    transform: scale(1.1);
+  }
+  
+  .heartFilled {
+    color: #c7215d;
     font-size: 1.2rem;
-}
-
-.favorite{
-    position: absolute;
-    top: 0.5rem;
-    right: 1rem;
+  }
+  
+  .heartOutline {
+    color: #5c2a2a;
     font-size: 1.2rem;
-}
-
-.price{
-    position: absolute;
-    bottom: 0;
-    left: 0.9rem;
-    padding: 0.3rem 100% 0 0;
-    color: rgb(5, 160, 5);
-    margin-top: 0.7rem;
-    font-size: 1.1rem;
-}
+  }
+  
+  @media (max-width: 768px) {
+    .gallery {
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    }
+    
+    .imageContainer {
+      height: 200px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .gallery {
+      grid-template-columns: 1fr;
+    }
+  }

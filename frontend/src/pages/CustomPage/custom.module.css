@@ -1,0 +1,352 @@
+/* Base Styles */
+.customDesignPage {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    padding: 0 1rem;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  .designContainer {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+    margin: 2rem 0;
+  }
+  
+  /* Progress Steps */
+  .progressSteps {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    position: relative;
+  }
+  
+  .progressSteps::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: #f0f0f0;
+    z-index: 1;
+  }
+  
+  .step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    flex: 1;
+  }
+  
+  .stepNumber {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #f0f0f0;
+    color: #999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    transition: all 0.3s ease;
+  }
+  
+  .stepLabel {
+    color: #999;
+    font-size: 0.9rem;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  .step.active .stepNumber {
+    background: #c7215d;
+    color: white;
+  }
+  
+  .step.active .stepLabel {
+    color: #5c2a2a;
+    font-weight: 500;
+  }
+  
+  .step.completed .stepNumber {
+    background: #a51b4d;
+    color: white;
+  }
+  
+  .step.completed .stepLabel {
+    color: #7a4a4a;
+  }
+  
+  /* Form Styles */
+  .designForm {
+    margin-top: 2rem;
+  }
+  
+  .formStep {
+    animation: fadeIn 0.5s ease;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .stepTitle {
+    color: #5c2a2a;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .formGroup {
+    margin-bottom: 1.5rem;
+  }
+  
+  .formGroup label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #5c2a2a;
+    font-weight: 500;
+  }
+  
+  .formGroup input,
+  .formGroup select,
+  .formGroup textarea {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid #e0c9c9;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .formGroup input:focus,
+  .formGroup select:focus,
+  .formGroup textarea:focus {
+    outline: none;
+    border-color: #c7215d;
+    box-shadow: 0 0 0 2px rgba(199, 33, 93, 0.2);
+  }
+  
+  .formGroup textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .radioGroup {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .radioOption {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .radioOption input {
+    width: auto;
+    margin: 0;
+  }
+  
+  .radioOption span {
+    padding: 0.5rem 1rem;
+    border: 1px solid #e0c9c9;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .radioOption input:checked + span {
+    background: #f8e2e0;
+    border-color: #c7215d;
+    color: #c7215d;
+    font-weight: 500;
+  }
+  
+  /* Form Navigation */
+  .formNavigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid #f0f0f0;
+  }
+  
+  .prevButton,
+  .nextButton,
+  .submitButton {
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .prevButton {
+    background: white;
+    color: #5c2a2a;
+    border: 1px solid #e0c9c9;
+  }
+  
+  .prevButton:hover {
+    background: #f8e2e0;
+  }
+  
+  .nextButton,
+  .submitButton {
+    background: #c7215d;
+    color: white;
+    border: none;
+  }
+  
+  .nextButton:hover,
+  .submitButton:hover {
+    background: #a51b4d;
+  }
+  
+  .nextButton:disabled,
+  .submitButton:disabled {
+    background: #e0c9c9;
+    cursor: not-allowed;
+  }
+  
+  /* Summary */
+  .summary {
+    background: #fff9f9;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  
+  .summary h3 {
+    color: #5c2a2a;
+    margin-bottom: 1rem;
+  }
+  
+  .summaryItem {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px dashed #f0f0f0;
+  }
+  
+  .summaryItem span:first-child {
+    font-weight: 500;
+    color: #7a4a4a;
+  }
+  
+  .summaryItem span:last-child {
+    color: #5c2a2a;
+  }
+  
+  /* Submission Success */
+  .submissionSuccess {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+  }
+  
+  .successContent {
+    background: white;
+    border-radius: 15px;
+    padding: 3rem;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    max-width: 600px;
+  }
+  
+  .successContent h2 {
+    color: #5c2a2a;
+    margin-bottom: 1rem;
+  }
+  
+  .successContent p {
+    color: #7a4a4a;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+  
+  .homeButton {
+    background: #c7215d;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1.5rem;
+  }
+  
+  .homeButton:hover {
+    background: #a51b4d;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .progressSteps {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1.5rem;
+    }
+    
+    .progressSteps::before {
+      display: none;
+    }
+    
+    .step {
+      flex-direction: row;
+      gap: 1rem;
+      align-items: center;
+      width: 100%;
+    }
+    
+    .stepLabel {
+      text-align: left;
+    }
+    
+    .formNavigation {
+      flex-direction: column-reverse;
+      gap: 1rem;
+    }
+    
+    .prevButton,
+    .nextButton,
+    .submitButton {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .designContainer {
+      padding: 1.5rem;
+    }
+    
+    .stepTitle {
+      font-size: 1.3rem;
+    }
+    
+    .radioGroup {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    
+    .successContent {
+      padding: 1.5rem;
+    }
+  }
