@@ -13,13 +13,11 @@ const HomePage = () => {
     setShowMore(!showMore);
   };
 
-
   const testimonials = [
     { id: 1, name: 'Sarah J.', comment: 'The most delicious cake I\'ve ever had!', rating: 5 },
     { id: 2, name: 'Michael T.', comment: 'Beautiful designs and amazing taste.', rating: 5 },
     { id: 3, name: 'Emma L.', comment: 'Perfect for our wedding! Everyone loved it.', rating: 4 },
   ];
-
 
   return (
     <div className={classes.homePage}>

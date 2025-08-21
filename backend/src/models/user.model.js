@@ -34,6 +34,7 @@ export const UserSchema = new Schema(
         password: {type:String, required:true },
         address: { type:String, required: true },
         isAdmin: { type:Boolean, default:false },
+        cart: { type: Schema.Types.ObjectId, ref: 'Cart' },      // optional
     },
     {
         timestamps: true,

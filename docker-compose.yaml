@@ -13,7 +13,7 @@ services:
     depends_on:
       - mongo
     environment:
-      MONGO_URI: mongodb+srv://mashawijesekara:n5AGT6RQWik5U33Z@cluster0.tjxwt5d.mongodb.net/MDCakeShop
+      MONGO_URI: mongodb+srv://mashawijesekara:7HO4hnI0D9CDyJOw@cluster0.tjxwt5d.mongodb.net/MDCakeShop
       JWT_SECRET: AbholkcnjklHuexw496434178@897
 
   frontend:
